@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DibujArte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background-color: #fffaf5;
+      color: #2e2e2e;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #2e2e2e;
+    }
+
+    .nav-buttons a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #4a4a4a;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #322c48;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #5a5a5a;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      background-color: #f2b954;
+      border: none;
+      color: white;
+      font-size: 1.1em;
+      padding: 12px 24px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero-image {
+      max-width: 400px;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .como-funciona {
+      text-align: center;
+      padding: 60px 20px 80px;
+    }
+
+    .como-funciona h2 {
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: #322c48;
+    }
+
+    .pasos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .paso {
+      width: 160px;
+    }
+
+    .paso img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .paso p {
+      font-size: 1em;
+      font-weight: 600;
+      color: #2e2e2e;
+    }
+
+    @media (max-width: 768px) {
+      .pasos {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .cta-button {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">📚 DibujArte</div>
+    <div class="nav-buttons">
+      <a href="#">Cómo funciona</a>
+      <a href="#">Ejemplos</a>
+      <a href="#">Ingresar</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Creá cuentos mágicos<br>con inteligencia artificial</h1>
+    <button class="cta-button">Crear mi primer cuento</button>
+    <img src="nena-ramita.png" alt="Nena leyendo en el árbol" class="hero-image">
+  </section>
+
+  <section class="como-funciona">
+    <h2>Cómo funciona</h2>
+    <div class="pasos">
+      <div class="paso">
+        <img src="lapiz.png" alt="Paso 1">
+        <p>Escribí tu historia</p>
+      </div>
+      <div class="paso">
+        <img src="cerebro.png" alt="Paso 2">
+        <p>La IA crea el cuento</p>
+      </div>
+      <div class="paso">
+        <img src="pincel.png" alt="Paso 3">
+        <p>Lo ilustra mágicamente</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
